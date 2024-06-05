@@ -1,0 +1,244 @@
+/* navbar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #0f105bff;
+    text-align: center;
+    padding: 14px 27px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #c9daf8ff;
+}
+
+nav.navigation {
+    visibility: hidden;
+    display: none;
+}
+/* navbar */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:/* #0f105bff ffd091*/ #0f105bff;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+    text-align: center;
+}
+
+td {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+span {
+    font-weight: bolder;
+    color: #26c9dd;
+}
+
+.svg {
+    width: 100%;
+}
+
+/* classes */
+
+/* 
+.parent {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+}
+
+.photobox {
+    width: 500px;
+    height: 100px;
+    background-color: white;
+}
+
+.textbox {
+    width: 500px;
+    height: 183px;
+    background-color: gray;
+}
+*/
+
+/* https://dev.to/dawnind/3-ways-to-display-two-divs-side-by-side-3d8b */
+.grid-container-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 1px solid black; */
+}
+
+.grid-child-element {
+    margin: 10px;
+    /* border: 1px solid red; */
+}
+
+.centerfifty {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    height: 70%;
+    margin-top: 3%;
+
+}
+
+/* .gamestuff {
+    padding: px;
+    margin: 0;
+    border: 1px solid white;
+} */
+
+.desktophide {
+    display: none;
+    visibility: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 720px) {
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #0f105bff;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .centerfifty {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+
+        height: 70%;
+        margin-top: 3%;
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+    img {
+        width: 100%;
+    }
+
+    .grid-container-element {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    main {
+        z-index: -1;
+    }
+    
+    .underneath {
+        visibility: hidden;
+        width: 98%;
+        z-index: -2;
+        position: absolute
+
+    }
+
+    .desktophide {
+        display: block;
+        visibility: visible;
+    }
+
+    .mobilehide {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* hamburger menu */
+
+    .topnav {
+        overflow: visible;
+        background-color: white;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        background: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: lightgray;
+        color: black;
+    }
+
+    .active {
+        background-color: darkgreen;
+        color: black;
+    }
+
+    .bar {
+        padding: 14.5px;
+    }
+    /* hamburger menu */
+    
+    .centerfifty {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+}
+
+/* media query */
