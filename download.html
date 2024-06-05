@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Download | Fishing in Landsville </title>
+            <link rel = "stylesheet" type = "text/css" href = "download.css">
+            <link rel = "stylesheet" type = "text/css" href = "icon.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel = "shortcut icon" type = "image/x-icon" href = "./favicon-32x32[2].png">
+            <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+            
+             <style>
+                
+                button.button {
+                    display: block;
+                    margin: auto;
+                    width: 20%;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    
+                }
+                
+                img {
+                    width: 50%;
+                    visibility: visible;
+                    
+                    display: block;
+                    margin: auto;
+                }
+                
+                img.svg {
+                    width: 100%;
+                    visibility: visible;
+                }
+                
+                .centerfifty {
+                    margin-top: 2%;
+                }
+                
+                .fifty {
+                    width: 30%;
+                }
+                
+                
+                @media screen and (max-width: 640px) {
+                    button {
+                        width: 100%;
+                        padding: 9px;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        background-color: rgb(45, 47, 182);
+                        color: white;
+                        border: 1px solid white;
+                    }
+                    
+                    img.fifty {
+                        width: 100%;
+                        display: block;
+                        margin: auto;
+                    }
+                    
+                    
+                    .grid-child-element {
+                        grid-row-gap: 0px;
+                    }
+                    
+                    .centerfifty {
+                        width: 90%;
+                        display: block;
+                        margin: auto;
+                    }
+                }
+            </style>
+        </head>
+
+        <body>
+            
+            <script src = "index.js"> </script>
+            <!-- <header> 
+                <nav> 
+                    <ul>
+                        <li> <a href = "aboutus.html"> About Us </a></li>
+                        <li> <a href = "help.html"> Help  </a> </li>
+                        <li> <a href = "download.html"> Download </a> </li>
+                        <li> <a href = "index.html"> Home </a> </li>
+                    </ul>
+                </nav>
+            </header> -->
+
+            <header> 
+
+                <nav class = "desktophide"> 
+
+                    <div class = "topnav">
+
+                        <div class = "bar">
+                            ok
+                        </div>
+                        
+                        <div id = "myLinks">
+                            <a href = "index.html"> Home </a>
+                            <a href = "download.html"> Download </a>
+                            <a href = "help.html"> Help </a>
+                            <a href = "aboutus.html"> About Us </a>
+                        </div>
+
+                        <a href = "javascript:void(0);" class = "icon" onclick = "myFunction()">
+                            <i class = "fa fa-bars">  </i>
+                        </a>
+                    </div>
+                </nav>
+                
+
+                <nav class = "mobilehide"> 
+                    <ul>
+                        <li> <a href = "aboutus.html"> About Us </a></li>
+                        <li> <a href = "help.html"> Help  </a> </li>
+                        <li> <a href = "download.html"> Download </a> </li>
+                        <li> <a href = "index.html"> Home </a> </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                
+                <div>
+                    <img class = "svg" src = "./fish_townn.svg">
+                </div>
+                <div>
+                    <h1> Download </h1>
+                </div>
+                
+                <!-- <div class = "centerfifty">
+                    <div class = "container"> 
+                        <div style = "text-align: center;"> 
+                            <img src = "https://d.newsweek.com/en/full/2117099/orca-sad.jpg?w=1600&h=1600&q=88&f=5a398913379df63c66e001f123c88b6e">
+    
+                            <a href = "./Fishing in Landsville.exe" download> 
+                                <button> Download Game </button>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <div class = "centerfifty">
+                    <div class = "grid-container-element">
+                        
+                        <div class = "grid-child-element">
+                            <a href = "./Fishing in Landsville.exe" download>
+                                    <img class = "fifty" src = "./download_box.png">
+                            </a>
+                        </div>
+                        
+                        <div class = "grid-child-element">
+                            <a href = "./Fishing in Landsville.exe" download> 
+                                    <button class = "button"> Download Game </button>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div> <!-- -->
+            </main>
+
+        </body>
+    </html>
